@@ -22,10 +22,10 @@
   		foreach($dom->find(".table") as $company_list) 
   		{
   				$answer[].= $company_list;
-  				/*$query = mysqli_query($con,"INSERT INTO tbl_scrap_company (scrap_id,scrap_comany_data) VALUES ('".$scrap_id."','".$company_list."')");
+  				$query = mysqli_query($con,"INSERT INTO tbl_scrap_company (scrap_id,scrap_comany_data) VALUES ('".$scrap_id."','".$company_list."')");
   		        if (!$query) {
   		            die(mysqli_error($con));
-  		        }*/
+  		        }
   		}
   	}
 

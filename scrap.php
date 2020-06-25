@@ -22,15 +22,13 @@ else{
 			{
 			   //echo $industry_list;
 				$answer[].= $industry_list;
-				/*$query = mysqli_query($con,"INSERT INTO tbl_scraping_data (scrap_data) VALUES ('".$industry_list."')");
+				$query = mysqli_query($con,"INSERT INTO tbl_scraping_data (scrap_data) VALUES ('".$industry_list."')");
 		        if (!$query) {
 		            die(mysqli_error($con));
-		        }*/
+		        }
 			}
 		}
 	}
-	/*$industry_data = json_encode($answer,true);*/
-	//print_r(json_decode($industry_data));
 	$fetch_sql = "SELECT * FROM `tbl_scraping_data`";
 	$res=mysqli_query($con,$fetch_sql);
 }

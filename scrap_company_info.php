@@ -23,10 +23,10 @@
   		{
         echo $company_info;
   				$answer[].= $company_info;
-  				// $query = mysqli_query($con,"INSERT INTO tbl_scrap_company_info (scrap_info_data,company_name) VALUES ('".$company_info."','".$company_name."')");
-  		  //       if (!$query) {
-  		  //           die(mysqli_error($con));
-  		  //       }
+  				$query = mysqli_query($con,"INSERT INTO tbl_scrap_company_info (scrap_info_data,company_name) VALUES ('".$company_info."','".$company_name."')");
+  		        if (!$query) {
+  		            die(mysqli_error($con));
+  		        }
   		}
   	}
 
